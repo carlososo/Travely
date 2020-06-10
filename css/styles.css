@@ -281,14 +281,19 @@ main h2 {
 
 .form {
     background-color: var(--gris-obscuro);
+    opacity: .7;
     border-radius: 25px;
 }
 
 .campo {
-    padding: 3rem 5rem 3rem 5rem;
+    padding: 2rem 0 1rem 5rem;
     display: flex;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid white;
 }
 
+
+/* 
 .campo label {
     color: white;
     font-size: 3rem;
@@ -304,42 +309,57 @@ main h2 {
     width: 100%;
     height: .3rem;
     margin: 2rem 0;
-}
+} */
 
 .campo input:not([type="submit"]),
 .campo textarea {
     flex: 1;
-    border-radius: 10px;
-    background-color: var(--gris-obscuro);
+    background: none;
     color: #ffffff;
-    border: 0;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    padding: 1rem;
+    margin: 0;
 }
 
 .campo input:not([type="submit"])::placeholder {
-    color: gray;
+    color: white;
 }
 
-.campo input:not([type="submit"]):hover,
+.campo textarea::placeholder {
+    color: white;
+}
+
+
+/* .campo input:not([type="submit"]):hover,
 .campo textarea:hover {
-    box-shadow: 3px 3px 3px 2px rgb(255, 255, 255);
-}
+    box-shadow: 3px 3px 3px 2px rgb(145, 145, 145);
+} */
 
-.enviar {
+
+/* .enviar {
     display: flex;
     justify-content: flex-end;
     padding-right: 5rem;
     padding-bottom: 1rem;
-}
+} */
 
 .boton-formulario {
-    display: inline-block;
+    display: block;
+    width: 100%;
     text-decoration: none;
-    padding: 2rem 6rem;
-    color: white;
+    color: #4270FF;
     font-size: 2rem;
     font-weight: 400;
-    border-radius: 15px;
-    background-color: #4270FF;
+    border-radius: 10px;
+    background: none;
+    border: none;
+    outline: none;
     transition: 600ms;
     cursor: pointer;
+}
+
+.boton-formulario:hover {
+    color: #ffffff;
 }
